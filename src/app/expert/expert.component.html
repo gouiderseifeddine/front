@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <title>Medic | Medical HTML Template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Medical HTML Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="author" content="Themefisher">
+    <meta name="generator" content="Themefisher Medical HTML Template v1.0">
+    <meta name="theme-name" content="medic" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/Front/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/Front/plugins/slick/slick.css">
+    <link rel="stylesheet" href="/assets/Front/plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="/assets/Front/plugins/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/assets/Front/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/Front/plugins/animation/animate.min.css">
+    <link rel="stylesheet" href="/assets/Front/plugins/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="/assets/Front/plugins/timePicker/timePicker.css">
+    <link href="/assets/Front/css/style.css" rel="stylesheet">
+    <link rel="icon" href="/assets/Front/images/favicon.png" type="image/x-icon">
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+
+    <!-- Nucleo Icons -->
+    <link href="/assets/Back/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="/assets/Back/css/nucleo-svg.css" rel="stylesheet" />
+
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <!-- CSS Files -->
+
+    <link id="pagestyle" href="/assets/Back/css/material-dashboard.css?v=3.1.0" rel="stylesheet" />
+
+    <!-- Nepcha Analytics (nepcha.com) -->
+    <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+    <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+
+        <!--Header Upper-->
+        <section class="header-uper">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-lg-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img loading="lazy" class="img-fluid" src="/assets/Front/images/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-9">
+                        <div class="right-side">
+                            <ul class="contact-info pl-0 mb-4 mb-md-0">
+                                <li class="item text-left">
+                                    <div class="icon-box">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
+                                    <strong>Email</strong>
+                                    <br>
+                                    <a href="mailto:info@medic.com">
+                                        <span>info@medic.com</span>
+                                    </a>
+                                </li>
+                                <li class="item text-left">
+                                    <div class="icon-box">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <strong>Call Now</strong>
+                                    <br>
+                                    <span>+ (88017) - 123 - 4567</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Header Upper-->
+
+        <!--Main Header-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarLinks">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" routerLink="/home">Home</a>
+                        </li>
+                        <li class="nav-item @@about">
+                            <a class="nav-link" (click)="toggleSection('etudiants')">Etudiants</a>
+                        </li>
+                        <li class="nav-item @@service">
+                            <a class="nav-link" (click)="toggleSection('categorieEtudiant')">Categorie Etudiant</a>
+                        </li>
+                        <li class="nav-item @@gallery">
+                            <a class="nav-link" (click)="toggleSection('objectives')">Objectives</a>
+                        </li>
+                        <li class="nav-item @@gallery">
+                            <a class="nav-link" (click)="toggleSection('missions')">Missions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--End Main Header -->
+        <div *ngIf="showEtudiants">
+            <section>
+                <div class="container-fluid py-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card my-4">
+                                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                                    <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                                        <h6 class="text-white text-capitalize ps-3">table des Etudiants</h6>
+                                    </div>
+                                </div>
+                                <div class="card-body px-0 pb-2">
+                                    <div class="table-responsive p-0">
+                                        <table class="table align-items-center mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th
+                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                        description etudiant</th>
+                                                    <th class="text-secondary opacity-7"></th>
+                                                    <th
+                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                        poid</th>
+                                                    <th class="text-secondary opacity-7"></th>
+                                                    <th
+                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                        taille</th>
+                                                    <th class="text-secondary opacity-7"></th>
+                                                    <th
+                                                        class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                                        action</th>
+                                                    <th class="text-secondary opacity-7"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr *ngFor="let student of students">
+                                                    <td>
+                                                        <div class="d-flex px-2 py-1">
+                                                            <div class="d-flex flex-column justify-content-center">
+                                                                <h6 class="mb-0 text-sm">{{ student.description }}
+                                                                </h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex px-2 py-1">
+                                                            <div class="d-flex flex-column justify-content-center">
+                                                                <h6 class="mb-0 text-sm">{{student.point + "kg"}}
+                                                                </h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex px-2 py-1">
+                                                            <div class="d-flex flex-column justify-content-center">
+                                                                <h6 class="mb-0 text-sm">{{ student.taille + " cm" }}
+                                                                </h6>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <a (click)="openeditModal()"
+                                                            class="text-secondary font-weight-bold text-xs"
+                                                            data-toggle="tooltip" data-original-title="Edit user">
+                                                            Edit
+                                                        </a>
+                                                        <div class="modal" id="editModal">
+                                                            <div class="modal-dialog" style="margin-top: 10%;">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header"
+                                                                        style="align-items: center;">
+                                                                        <h5>Editer <span>l'étudiant</span></h5>
+                                                                        <button type="button" class="close"
+                                                                            data-dismiss="modal"
+                                                                            (click)="closeeditModal()"
+                                                                            style="margin-bottom: 3%; width: min-content; align-self: flex-end;">&times;</button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <div class="form-group">
+                                                                            <label for="categorySelect">Category</label>
+                                                                            <select class="form-control"
+                                                                                name="etudiant_category"
+                                                                                [(ngModel)]="etudiant_category"
+                                                                                (change)="onCategoryChange($event)">
+                                                                                <option
+                                                                                    *ngFor="let category of categories"
+                                                                                    [ngValue]="category.idCategorie">{{
+                                                                                    category.nomCategory
+                                                                                    }}
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+
+                                                                        <br>
+                                                                        <h6 for="objectiveDescription"
+                                                                            style="margin-top: 20px;">Description de
+                                                                            l'étudiant</h6>
+                                                                        <textarea type="text"
+                                                                            name="objectiveDescription"
+                                                                            [(ngModel)]="etudiant_description"
+                                                                            placeholder="Description de l'etudiant"
+                                                                            style="margin-bottom: 20px;" row="15"
+                                                                            (input)="onInput($event)"></textarea>
+                                                                        <br>
+                                                                        <button (click)="updateEtudiant(student)"
+                                                                            type="button"
+                                                                            class="btn btn-style-one save-btn"
+                                                                            style="margin-right: 10px; float: right;">Save</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <style>
+            /* Custom CSS for team section cards */
+            .team-section .card {
+                height: 100%;
+                box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+
+                /* Ensure all cards have the same height */
+            }
+
+            .team-section .card img {
+                object-fit: cover;
+                /* Fit the images to cover the card */
+                height: 200px;
+                /* Set the height of the images */
+                width: 100%;
+                /* Ensure images take the full width of the card */
+            }
+
+            .team-section .btn-main:hover {
+                box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+                /* Hover effect */
+            }
+        </style>
+
+        <div *ngIf="showCategorieEtudiant">
+            <!--team section-->
+            <section class="team-section section">
+                <div class="hero-slider">
+                    <div class="slider-item slide1"
+                        style="background-image: url(/assets/Front/images/background/mental.jpg)">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="content style text-center">
+                                        <button class="btn btn-main btn-white"
+                                            (click)="toggleShowCategories();toggleAllCategory()"
+                                            data-animation-in="slideInLeft" data-duration-in="1.2">afficher les
+                                            Categories</button>
+                                        <button class="btn btn-main btn-white" (click)="toggleAddCategories()"
+                                            data-animation-in="slideInLeft" data-duration-in="1.2"
+                                            style="margin-left: 10%;">Ajouter une Categorie</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="showAffichageCategory" class="container">
+                    <div *ngIf="showAllCategories" class="container">
+                        <div class="container">
+                            <div class="section-title text-center">
+                                <h3>Les Catégories
+                                    <span>des étudiants</span>
+                                </h3>
+                            </div>
+                            <div class="row justify-content-center" style="align-items: baseline;">
+                                <div class="col-lg-4 col-md-6 mb-4" *ngFor="let category of categories">
+                                    <div class="card team-member">
+                                        <img loading="lazy" src="/assets/Front/images/background/mental.jpg"
+                                            alt="category" class="card-img-top img-fluid">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{ category.nomCategory }}</h5>
+                                            <button type="button" class="btn btn-main"
+                                                (click)="retrieveCategoryById(category.idCategorie);toggleOneCategory()">Consulter</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf="showOneCategories" class="container">
+                        <div class="row">
+                            <!-- Displayed cards -->
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 mb-2">
+                                    <div class="card position-relative">
+                                        <div class="card-body ">
+                                            <div class="contact-area style-two pl-0 pr-0 pr-lg-4">
+                                                <form (submit)="updateCategory();toggleAllCategory()"
+                                                    class="default-form contact-form" action="javascript:void(0)"
+                                                    method="post">
+                                                    <div class="form-group">
+                                                        <label for="nomCategory">nom Du Category:</label>
+                                                        <input type="text" class="form-control" id="nomCategory"
+                                                            name="nomCategory" *ngIf="selectedCategory" required
+                                                            [(ngModel)]="selectedCategory.nomCategory"
+                                                            [placeholder]="selectedCategory.nomCategory">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-main">modifier</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div *ngIf="showAddCategory" class="container">
+                    <!-- Add new category section -->
+                    <section class="team-section section">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card team-member">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Ajouter une nouvelle catégorie</h5>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-3"
+                                                    placeholder="Category Title" [(ngModel)]="newCategoryTitle">
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="button" class="btn btn-main"
+                                                    (click)="addCategory()">Ajouter</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+
+        </div>
+
+        <!-- Missions section -->
+
+        <div *ngIf="showMissions">
+            <!--team section-->
+            <section class="team-section section">
+                <div class="hero-slider">
+                    <div class="slider-item slide1"
+                        style="background-image: url(/assets/Front/images/background/mission.png)">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="content style text-center">
+                                        <button class="btn btn-main btn-white"
+                                            (click)="toggleShowMissions();toggleAllMission()"
+                                            data-animation-in="slideInLeft" data-duration-in="1.2">afficher les
+                                            Missions</button>
+                                        <button class="btn btn-main btn-white" (click)="toggleAddMissions()"
+                                            data-animation-in="slideInLeft" data-duration-in="1.2"
+                                            style="margin-left: 10%;">Ajouter une Mission</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="showAffichageMission" class="container">
+                    <div *ngIf="showAllMissions" class="container">
+                        <div class="container">
+                            <div class="section-title text-center">
+                                <h3>Les Missions
+                                    <span>des objectives</span>
+                                </h3>
+                            </div>
+                            <div class="row justify-content-center" style="align-items: baseline;">
+                                <div class="col-lg-4 col-md-6 mb-4" *ngFor="let mission of missionList">
+                                    <div class="card team-member">
+                                        <img loading="lazy" src="/assets/Front/images/background/mission.png"
+                                            alt="category" class="card-img-top img-fluid">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{ mission.titreMission }}</h5>
+                                            <button type="button" class="btn btn-main"
+                                                (click)="selectMission(mission);">Consulter</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf="showOneMissions" class="container">
+                        <div class="row">
+                            <!-- Displayed cards -->
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 mb-2">
+                                    <div class="card position-relative">
+                                        <div class="card-body ">
+                                            <div class="contact-area style-two pl-0 pr-0 pr-lg-4">
+                                                <form class="default-form contact-form" action="javascript:void(0)"
+                                                    method="post">
+                                                    <div class="form-group">
+                                                        <label>nom Du Category:</label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-main">modifier</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div *ngIf="showAddMission" class="container">
+                    <!-- Add new category section -->
+                    <section class="team-section section">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card team-member">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Ajouter une nouvelle Mission</h5>
+                                            <form (ngSubmit)="submitMission()">
+                                                <div class="form-group">
+                                                    <label for="titreMission">Mission
+                                                        Title</label>
+                                                    <input type="text" class="form-control" id="titreMission"
+                                                        name="titreMission" [(ngModel)]="titreMission" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="valeurMission">Mission
+                                                        Value</label>
+                                                    <input type="number" class="form-control" id="valeurMission"
+                                                        name="valeurMission" [(ngModel)]="valeurMission" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="descriptionMission">Mission
+                                                        Description</label>
+                                                    <textarea class="form-control" id="descriptionMission"
+                                                        name="descriptionMission" [(ngModel)]="descriptionMission"
+                                                        required></textarea>
+                                                </div>
+                                                <div class="form-group dropdown" style="width: 30%;">
+                                                    <select class="modal-content">
+                                                        <option value="Please select your difficulty" disabled selected>
+                                                            Difficulty
+                                                        </option>
+                                                        <option value="easy"
+                                                            style="color: #f1f1f1; background-color: #2dab25;">
+                                                            Easy</option>
+                                                        <option value="medium"
+                                                            style="color: #f1f1f1; background-color: #FF7E00;">
+                                                            Medium</option>
+                                                        <option value="hard"
+                                                            style="color: #f1f1f1; background-color: #AF002A;">
+                                                            Hard</option>
+                                                    </select>
+
+                                                </div>
+                                                <br />
+                                                <div class="form-group dropdown" style="width: 30%;">
+                                                    <label for="categorySelect">Objectives</label>
+                                                    <select class="modal-content" name="objectiveSelect"
+                                                        [(ngModel)]="mission_Object_Id">
+                                                        <option *ngFor="let objective of objectives"
+                                                            selected="mission_Object_Id == objective.idObjective"
+                                                            [ngValue]="objective.idObjective">{{
+                                                            objective.objectiveTitle }}
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <br />
+                                                <button type="submit" class="btn btn-primary"
+                                                    style="background-color: #36a05e;">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+
+        </div>
+
+
+
+
+
+        <!-- Objectives section -->
+
+        <div class="content style text-center" *ngIf="showObjectives">
+
+            <div class="content style text-center" id="expertForm">
+                <section class="section style-three pb-0">
+                    <div class="hero-slider">
+                        <div class="slider-item slide1"
+                            style="background-image: url(/assets/Front/images/background/objective.jpg)">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="content style text-center">
+                                            <button class="btn btn-main btn-white"
+                                                (click)="toggleShowObjectives();toggleAllObjectives()"
+                                                data-animation-in="slideInLeft" data-duration-in="1.2">afficher les
+                                                Objectives</button>
+                                            <button class="btn btn-main btn-white" (click)="toggleAddObjectives()"
+                                                data-animation-in="slideInLeft" data-duration-in="1.2"
+                                                style="margin-left: 10%;">Ajouter Objective</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf="showAffichageObjective" class="container">
+
+                        <div *ngIf="showAllObjectives" class="container">
+
+                            <section class="team-section section">
+                                <div class="container">
+                                    <div class="section-title text-center">
+                                        <h3>Les Objectives
+                                            <span>des étudiants</span>
+                                        </h3>
+                                    </div>
+                                    <div class="row justify-content-center" style="align-items: baseline;">
+                                        <div class="col-lg-4 col-md-6 mb-4" *ngFor="let objective of objectives">
+                                            <div class="card team-member">
+                                                <img loading="lazy" src="/assets/Front/images/background/objective.jpg"
+                                                    alt="category" class="card-img-top img-fluid">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">{{ objective.objectiveTitle }}</h5>
+                                                    <button type="button" class="btn btn-main"
+                                                        (click)="retrieveObjectiveById(objective.idObjective);toggleOneObjective()">Consulter</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div *ngIf="showOneObjective" class="container">
+                            <div class="row">
+                                <!-- Displayed cards -->
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6 mb-2">
+                                        <div class="card position-relative">
+                                            <div class="card-body ">
+                                                <div class="contact-area style-two pl-0 pr-0 pr-lg-4">
+                                                    <form (submit)="updateObjective();toggleAllObjectives();"
+                                                        class="default-form contact-form" action="javascript:void(0)"
+                                                        method="post">
+                                                        <div class="form-group">
+                                                            <label for="objectiveTitle">Title:</label>
+                                                            <input type="text" class="form-control" id="objectiveTitle"
+                                                                name="objectiveTitle" *ngIf="selectedObjective" required
+                                                                [(ngModel)]="selectedObjective.objectiveTitle"
+                                                                [placeholder]="selectedObjective.objectiveTitle">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="objectiveDescription">Description:</label>
+                                                            <textarea class="form-control" id="objectiveDescription"
+                                                                name="objectiveDescription" *ngIf="selectedObjective"
+                                                                required
+                                                                [(ngModel)]="selectedObjective.objectiveDescription"
+                                                                [placeholder]="selectedObjective.objectiveDescription"></textarea>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="goal">Goal:</label>
+                                                            <input type="number" class="form-group" id="goal"
+                                                                name="goal" *ngIf="selectedObjective" required
+                                                                [(ngModel)]="selectedObjective.goal"
+                                                                [placeholder]="selectedObjective.goal.toString()">
+                                                        </div>
+                                                        <button type="submit" class="btn btn-main">modifier</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div *ngIf="showAddObjective" class="container">
+
+                        <div class="section-title text-center " style="margin-bottom: 40PX;">
+                            <h3>Ajouter
+                                <span>un objective</span>
+                            </h3>
+
+                        </div>
+                        <div class="row">
+                            <!-- Displayed cards -->
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card position-relative">
+                                        <div class="card-body ">
+                                            <div class="contact-area style-two pl-0 pr-0 pr-lg-4">
+                                                <div class="section-title">
+                                                    <label for="objectiveTitle">Objective Title</label>
+                                                    <input type="text" class="form-control"
+                                                        [(ngModel)]="newObjective.objectiveTitle" name="objectiveTitle"
+                                                        placeholder="Titre de l'Objective">
+
+                                                </div>
+                                                <form (submit)="saveObjective()" name="objective_form"
+                                                    class="default-form contact-form" action="javascript:void(0)"
+                                                    method="post">
+
+                                                    <div class="form-group">
+                                                        <label for="objectiveDescription">Objective Description</label>
+                                                        <textarea class="form-control" rows="3"
+                                                            placeholder="Description de l'Objective" required
+                                                            [(ngModel)]="newObjective.objectiveDescription"
+                                                            name="objectiveDescription"
+                                                            [ngModelOptions]="{ standalone: true }"></textarea>
+
+                                                    </div>
+
+
+
+
+                                                    <!-- Goal field -->
+                                                    <div class="form-group">
+                                                        <label for="goal">Goal</label>
+                                                        <input type="number" class="form-control"
+                                                            [(ngModel)]="newObjective.goal" placeholder="Goal" required
+                                                            name="goal" [ngModelOptions]="{ standalone: true }">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="categorySelect">Category</label>
+                                                        <select class="form-control" name="categorySelect"
+                                                            [(ngModel)]="newObjective.categoryEtudiant">
+                                                            <option *ngFor="let category of categories"
+                                                                [ngValue]="category">{{ category.nomCategory
+                                                                }}
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- Save button to save the changes -->
+                                                    <div class="button-container" style=" margin-top: 10px;">
+                                                        <button type="submit" class="btn btn-style-one save-btn"
+                                                            style="position: absolute; right: 10px;">Save</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <router-outlet></router-outlet>
+        <app-footer-front></app-footer-front>
+    </div>
+</body>

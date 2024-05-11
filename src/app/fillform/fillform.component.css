@@ -1,0 +1,80 @@
+/* Styles for the plus-sign button */
+.plus-sign {
+    color: #fff;
+    background-color: #36a05e;
+    border-color: #36a05e;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .plus-sign:hover {
+    background-color: #36a05e;
+  }
+  
+  /* Styles for the delete-btn button */
+  .delete-btn {
+    color: #fff;
+    background-color: #c44350; /* Red color for delete button */
+    border-color: #c44350;
+    font-size: 12px;
+    border-radius: 5px; /* Rectangle shape */
+    width: 30%;
+    height: 7%;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c44350; /* Darker red color on hover */
+  }
+  .etudiant-input {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  .save-btn {
+    color: #fff;
+ background-color: #36a05e; /* Red color for delete button */
+ border-color: #36a05e;
+ font-size: 12px;
+ border-radius: 5px; /* Rectangle shape */
+ width: 30%;
+ height: 7%;
+ line-height: 1;
+ cursor: pointer;
+ transition: all 0.3s ease;
+}
+  .etudiant-file-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .etudiant-file-input {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .etudiant-submit-btn {
+    background-color: #36a05e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .etudiant-submit-btn:hover {
+    background-color: #2e854b;
+  }

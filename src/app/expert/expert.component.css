@@ -1,0 +1,222 @@
+.mission-btn{
+  color: #fff;
+  background-color: #36a05e;
+  border-color: #36a05e;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.plus-sign {
+    color: #fff;
+    background-color: #36a05e;
+    border-color: #36a05e;
+    font-size: 16px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 0;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .plus-sign:hover {
+    background-color: whitesmoke;
+  }
+  
+  /* Styles for the delete-btn button */
+  .delete-btn {
+    color: #fff;
+    background-color: #c44350; /* Red color for delete button */
+    border-color: #c44350;
+    font-size: 12px;
+    border-radius: 5px; /* Rectangle shape */
+    width: 30%;
+    height: 7%;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c44350; /* Darker red color on hover */
+  }
+  .etudiant-input {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .etudiant-file-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .etudiant-file-input {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .etudiant-submit-btn {
+    background-color: #36a05e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .etudiant-submit-btn:hover {
+    background-color: #2e854b;
+  } 
+  /* Custom styles for the save button */
+.save-btn {
+       color: #fff;
+    background-color: #36a05e; /* Red color for delete button */
+    border-color: #36a05e;
+    font-size: 12px;
+    border-radius: 5px; /* Rectangle shape */
+    width: 30%;
+    height: 7%;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .save-btn:hover {
+    background-color: #2e854b; /* Change background color on hover */
+  }
+  
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  /* Style The Dropdown Button */
+  .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      background-color: #f1f1f1
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+.form-group {
+  position: relative; /* Ensure relative positioning for the parent */
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  color: #6c757d; /* Placeholder color */
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;}
+    

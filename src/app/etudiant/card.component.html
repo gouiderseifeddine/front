@@ -1,0 +1,25 @@
+<div class="modal" id="missionModal">
+    <div class="modal-dialog" style="margin-top: 10%;">
+        <div class="modal-content">
+            <div class="modal-header" style="align-items: center;">
+                <h5 id="missionModalTitle" style="margin-left: 33%; width: max-content; align-self: flex-start;">
+                    {{missionTitle}}</h5>
+
+
+                <button type="button" class="close" data-dismiss="modal" (click)="closeMissionModal()"
+                    style="margin-bottom: 3%; width: min-content; align-self: flex-end;">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <h5>Title: {{missionTitle }}</h5>
+                <h5>Points: {{points}}</h5>
+                <div class="row">
+                    <div class="col text-end">
+                        <button type="button" class="btn btn-style-one save-btn" style="margin-top: 9%;"
+                            (click)="saveMission()">finish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
